@@ -1,5 +1,11 @@
 module.exports = {
     meta: require('./meta'),
-    // Token
-    balanceOf: require('./token/balanceOf')
+    // Balances
+    balanceOf: require('./Balance/balanceOf'),
+    itemBalance: require('./Balance/itemBalance'),
+    itemBalances: require('./Balance/itemBalances'),
+    // Crafter
+    craftables: require('./Crafter/getCraftables'),
+    deconstructables: require('./Crafter/getDeconstructables'),
+    recipie: require('./Crafter/getRecipie')
 }

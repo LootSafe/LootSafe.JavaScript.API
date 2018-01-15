@@ -18,8 +18,7 @@ class LootSafe {
 
 const lootsafe = new LootSafe('http://localhost:1337/v1', 'sha1$7f408b79$1$02fdd7ee5f25861e9ed1af83bf06124c52b3aec6')
 
-lootsafe.meta().then(res => {
-    console.log('res', res)
-})
+const ethAcc = '0x616604227072883aabfc3ee09eae350be9c0912d'
 
-lootsafe.balanceOf('0x02e064890915485094ea7a304b7deaa3e3248207').then(res => console.log(res))
+lootsafe.meta().then(res => console.log('meta', res))
+lootsafe.craftables().then(res => console.log('response', res))
