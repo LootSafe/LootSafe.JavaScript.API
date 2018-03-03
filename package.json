@@ -1,6 +1,6 @@
 {
-  "name": "lootsafe.javascript.api",
-  "version": "1.0.0",
+  "name": "lootsafe",
+  "version": "0.0.1",
   "description": "Javascript abstraction of the LootSafe API",
   "main": "index.js",
   "scripts": {

@@ -15,6 +15,8 @@ module.exports = {
     lootboxItems: require('./LootBox/getItems'),
     // Trade
     trade: require('./Trade/getTrade'),
-    tradeCost: require('./Trade/getTradeCost'),
-    trades: require('./Trade/getTrades')
+    merchantTrades: require('./Trade/getMerchantTrades'),
+    trades: require('./Trade/getTrades'),
+    // Item
+    newItem: require('./Global/newItem')
 }

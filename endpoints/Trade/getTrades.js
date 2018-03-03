@@ -1,9 +1,9 @@
 const fetch = require('node-fetch')
 
 /** @function
- * @description Get a trades offered by a specific merchant
+ * @description Get a trades offered
  * @name trades */
-module.exports = function (merchant) {
-    return fetch(`${this.apiUrl}/trades/get/${merchant}`)
+module.exports = function () {
+    return fetch(`${this.apiUrl}/trades`)
         .then(res => res.json())
 }
