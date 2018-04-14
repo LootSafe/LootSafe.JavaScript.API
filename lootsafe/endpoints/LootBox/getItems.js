@@ -8,4 +8,7 @@ const fetch = require('node-fetch')
 module.exports = function (rarity) {
     return fetch(`${this.apiUrl}/lootbox/items/${rarity}`)
         .then(res => res.json())
+        .catch(function(err){
+          throw Error(err)
+        })                      
 }

@@ -9,4 +9,7 @@ const fetch = require('node-fetch')
 module.exports = function (itemAddress, address) {
     return fetch(`${this.apiUrl}/balance/item/${itemAddress}/${address}`)
         .then(res => res.json())
+		.catch(function(err){
+			throw Error(err)
+		})               
 }

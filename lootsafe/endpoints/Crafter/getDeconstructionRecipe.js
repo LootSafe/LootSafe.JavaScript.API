@@ -8,4 +8,7 @@ const fetch = require('node-fetch')
 module.exports = function (item) {
     return fetch(`${this.apiUrl}/recipe/deconstruction/get/${item}`)
         .then(res => res.json())
+        .catch(function(err){
+          throw Error(err)
+        })                         
 }

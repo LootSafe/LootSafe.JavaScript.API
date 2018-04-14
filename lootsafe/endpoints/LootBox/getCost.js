@@ -6,4 +6,7 @@ const fetch = require('node-fetch')
 module.exports = function () {
     return fetch(`${this.apiUrl}/lootbox/cost`)
         .then(res => res.json())
+        .catch(function(err){
+          throw Error(err)
+        })                      
 }

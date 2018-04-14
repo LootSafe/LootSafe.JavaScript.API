@@ -18,5 +18,8 @@
   "homepage": "https://github.com/LootSafe/LootSafe.JavaScript.API#readme",
   "dependencies": {
     "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.0"
   }
 }
