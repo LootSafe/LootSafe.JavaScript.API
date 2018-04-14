@@ -2,7 +2,7 @@
 
 LootSafe API abstraction written in JavaScript
 
-### Usuage
+### Usage
 
 ```
 const Loot = require('./lootsafe/LootSafe.js')
