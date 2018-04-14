@@ -1,18 +1,17 @@
 var lootsafe = module.exports = {
 
-	init: function(baseurl, apikey, otpkey, ethAcc)
+	init: function(baseurl, apikey, otpkey)
     {
 		return new LootSafe(baseurl, 
 							apikey,
-							otpkey,
-							ethAcc
+							otpkey
 							)
 	}
 };
 
 class LootSafe {
 
-    constructor(apiUrl, apiKey, otpKey, ethAcc){
+    constructor(apiUrl, apiKey, otpKey){
         this.apiUrl = apiUrl
         this.apiKey = apiKey
         this.otpKey = otpKey

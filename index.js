@@ -5,8 +5,8 @@ apikey = 'pWpzWuxoKUKAmlHc0wPi7lFS38FTth'
 otpkey = 'otpkey'
 ethAcc = '0x91e7abb929ba280680318343aaaace7ad16623e1'
 
-const lootsafe = Loot.init(baseurl, apikey, otpkey, ethAcc)
+const lootsafe = Loot.init(baseurl, apikey, otpkey)
 
-lootsafe.itemBalances(lootsafe.ethAcc).then(res => {
+lootsafe.itemBalances(ethAcc).then(res => {
     console.log(res)
 })      
