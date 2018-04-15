@@ -1,12 +1,12 @@
 const Loot = require('./lootsafe/LootSafe.js')
 
-baseurl = 'http://localhost:1337/v1'
-apikey = 'pWpzWuxoKUKAmlHc0wPi7lFS38FTth'
-otpkey = 'otpkey'
-ethAcc = '0x91e7abb929ba280680318343aaaace7ad16623e1'
+const baseurl = 'http://localhost:1337/v1'
+const apikey = 'pWpzWuxoKUKAmlHc0wPi7lFS38FTth'
+const otpkey = 'otpkey'
+const ethAcc = '0xb68066af702fe39ad76f486a9a1f971bccc10b1e'
 
 const lootsafe = Loot.init(baseurl, apikey, otpkey)
 
 lootsafe.itemBalances(ethAcc).then(res => {
-    console.log(res)
-})      
+  console.log(res)
+})

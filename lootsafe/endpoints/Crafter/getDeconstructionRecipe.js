@@ -6,9 +6,9 @@ const fetch = require('node-fetch')
  * @param {string} item - address of the item
  */
 module.exports = function (item) {
-    return fetch(`${this.apiUrl}/recipe/deconstruction/get/${item}`)
-        .then(res => res.json())
-        .catch(function(err){
-          throw Error(err)
-        })                         
+  return fetch(`${this.apiUrl}/recipe/deconstruction/get/${item}`)
+    .then(res => res.json())
+    .catch(function (err) {
+      throw Error(err)
+    })
 }

@@ -4,9 +4,9 @@ const fetch = require('node-fetch')
  * @description Get item ledger
  * @name ledger */
 module.exports = function (item) {
-    return fetch(`${this.apiUrl}/item/ledger`)
-        .then(res => res.json())
-		.catch(function(err){
-			throw Error(err)
-		})               
+  return fetch(`${this.apiUrl}/item/ledger`)
+    .then(res => res.json())
+    .catch(function (err) {
+      throw Error(err)
+    })
 }
