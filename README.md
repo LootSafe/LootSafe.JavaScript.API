@@ -78,7 +78,7 @@ Running all tests
 | getItem(item)  | **GET**  | OPEN   | Available |
 | getItemByAddress(itemAddress) | **GET**  | OPEN   | Available |
 | spawnItem(itemAddress, account) | **POST**  | OPEN   | Available |
-| clearAvailability(itemAddress, account) | **POST**  | OPEN   | Available |
+| clearAvailability(itemAddress) | **POST**  | OPEN   | Available |
 | **LootBox** |   |   |   |
 | getChances()  | **GET**  | OPEN   | Available |
 | getCost()  | **GET**  | OPEN   | Available |
