@@ -7,7 +7,7 @@ const fetch = require('node-fetch')
  * @param {number} uncommon
  * @name updateChance */
 module.exports = function (epic, rare, uncommon) {
-  return fetch(`${this.apiUrl}/lootbox/chances/update/${epic}/${rare}/${uncommon}`, {
+  return fetch(`${this.apiUrl}lootbox/chances/update/${epic}/${rare}/${uncommon}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

@@ -4,7 +4,7 @@ const fetch = require('node-fetch')
  * @description Get meta data
  * @name getMeta */
 module.exports = function () {
-  return fetch(`${this.apiUrl}/`)
+  return fetch(`${this.apiUrl}`)
     .then(res => res.json())
     .catch(function (err) {
       throw Error(err)

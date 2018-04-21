@@ -110,7 +110,7 @@ describe('Crafter', () => {
 
   describe('Remove Recipe', () => {
     it(`Should remove an existing recipe`, done => {
-      lootsafe.removeRecipe(lootsafe.address)
+      lootsafe.removeRecipe(lootsafe.itemAddress)
         .then(res => {
           if (res.status === 200 && res.data) {
             done()

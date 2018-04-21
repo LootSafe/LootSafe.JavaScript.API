@@ -6,8 +6,8 @@ const fetch = require('node-fetch')
  * @param {string} itemaddress
  * @param {string} user
  */
-module.exports = function (itemaddress, user) {
-  return fetch(`${this.apiUrl}/item/spawn`, {
+module.exports = function (itemaddress, account) {
+  return fetch(`${this.apiUrl}item/spawn`, {
     method: 'POST',
     headers: {
       'Accept': 'application/json, text/plain, */*',
@@ -17,7 +17,7 @@ module.exports = function (itemaddress, user) {
     },
     body: JSON.stringify({
       itemAddress: itemaddress,
-      to: user
+      to: account
     })
   })
     .then(res => res.json())

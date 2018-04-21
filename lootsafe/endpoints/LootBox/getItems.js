@@ -6,7 +6,7 @@ const fetch = require('node-fetch')
  * @param {string} rarity - Rarity of the item group to fetch
  */
 module.exports = function (rarity) {
-  return fetch(`${this.apiUrl}/lootbox/items/${rarity}`)
+  return fetch(`${this.apiUrl}lootbox/items/${rarity}`)
     .then(res => res.json())
     .catch(function (err) {
       throw Error(err)

@@ -53,7 +53,7 @@ describe('LootBox', () => {
 
   describe('Add LootBoxItem', () => {
     it(`Should add an item to the lootbox with it's rarity type`, done => {
-      lootsafe.lootboxItems(lootsafe.itemaddress, lootsafe.rarity)
+      lootsafe.lootboxItems(lootsafe.itemAddress, lootsafe.rarity)
         .then(res => {
           if (res.status === 200 && res.data) {
             done()
@@ -69,7 +69,7 @@ describe('LootBox', () => {
 
   describe('Update Chance', () => {
     it(`Should update the chance for an item`, done => {
-      lootsafe.lootboxItems(lootsafe.itemaddress)
+      lootsafe.lootboxItems(lootsafe.itemAddress)
         .then(res => {
           if (res.status === 200 && res.data) {
             done()

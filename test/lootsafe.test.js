@@ -21,7 +21,7 @@ describe('LootSafe', () => {
 
   describe('Get Item by Address', () => {
     it(`Should get an item by address`, done => {
-      lootsafe.getItem(lootsafe.itemaddress)
+      lootsafe.getItem(lootsafe.itemAddress)
         .then(res => {
           if (res.status === 200 && res.data) {
             done()
@@ -69,7 +69,7 @@ describe('LootSafe', () => {
 
   describe('Get Item By Addresses', () => {
     it(`Should return item by address`, done => {
-      lootsafe.getItemByAddress(lootsafe.itemaddress)
+      lootsafe.getItemByAddress(lootsafe.itemAddress)
         .then(res => {
           if (res.status === 200 && res.data) {
             done()
@@ -85,7 +85,7 @@ describe('LootSafe', () => {
 
   describe('Spawn Item', () => {
     it(`Should spawn a new item into an account`, done => {
-      lootsafe.spawnItem(lootsafe.itemaddress, lootsafe.ethAcc)
+      lootsafe.spawnItem(lootsafe.itemAddress, lootsafe.account)
         .then(res => {
           if (res.status === 200 && res.data) {
             done()
@@ -101,7 +101,7 @@ describe('LootSafe', () => {
 
   describe('Clear Availability', () => {
     it(`Should clear availability`, done => {
-      lootsafe.clearAvailability(lootsafe.itemaddress, lootsafe.ethAcc)
+      lootsafe.clearAvailability(lootsafe.itemAddress, lootsafe.account)
         .then(res => {
           if (res.status === 200 && res.data) {
             done()

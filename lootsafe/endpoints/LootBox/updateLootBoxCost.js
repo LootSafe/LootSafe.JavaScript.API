@@ -5,7 +5,7 @@ const fetch = require('node-fetch')
  * @param {number} cost
  * @name updateLootBoxCost */
 module.exports = function (cost) {
-  return fetch(`${this.apiUrl}/lootbox/cost/` + cost, {
+  return fetch(`${this.apiUrl}lootbox/cost/` + cost, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

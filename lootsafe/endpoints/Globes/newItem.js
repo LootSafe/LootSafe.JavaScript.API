@@ -9,7 +9,7 @@ const fetch = require('node-fetch')
  * @param {string} metadata - Use whatever format you want for this, this should be used to store extra important data about this item on chain
  */
 module.exports = function (name, id, totalSupply = 1, metadata = '') {
-  return fetch(`${this.apiUrl}/item/new`, {
+  return fetch(`${this.apiUrl}item/new`, {
     method: 'POST',
     headers: {
       'Accept': 'application/json, text/plain, */*',

@@ -6,17 +6,17 @@ const fetch = require('node-fetch')
  * @param {list} materials
  * @param {list} counts
  * @name newRecipe */
-module.exports = function (r, m, c) {
-  return fetch(`${this.apiUrl}/recipe/new`, {
+module.exports = function (result, materials, counts) {
+  return fetch(`${this.apiUrl}recipe/new`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       key: 'pWpzWuxoKUKAmlHc0wPi7lFS38FTth'
     },
     body: JSON.stringify({
-      result: r,
-      materials: m,
-      counts: c
+      result: this.result,
+      materials: this.materials,
+      counts: this.counts
     })
   })
     .then(res => res.json())

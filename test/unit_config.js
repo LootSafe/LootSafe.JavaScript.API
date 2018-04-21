@@ -1,23 +1,23 @@
 module.exports = {
 
   initUnit: function () {
-    return new LootSafeUnit('http://localhost:1337/v1',
+    return new LootSafeUnit('http://localhost:1337/v1/',
       'pWpzWuxoKUKAmlHc0wPi7lFS38FTth',
       'otpKey',
-      '0xb68066af702fe39ad76f486a9a1f971bccc10b1e',
-      '0xe5e71b70c81e1d96a4d594da6eea6337426f716b',
-      'uncommon'
+      '0xf659c7cef127b75ac85044c4297c21a230f352e9',
+      '0x67a8baa3da64b40d359253dd08398d02bec939ef',
+      'rare'
     )
   }
 }
 
 class LootSafeUnit {
-  constructor (apiUrl, apiKey, otpKey, ethAcc, itemaddress, rarity) {
+  constructor (apiUrl, apiKey, otpKey, account, itemAddress, rarity) {
     this.apiUrl = apiUrl
     this.apiKey = apiKey
     this.otpKey = otpKey
-    this.ethAcc = ethAcc
-    this.itemaddress = itemaddress
+    this.account = account
+    this.itemAddress = itemAddress
     this.rarity = rarity
     this.buildEndpoints()
   }

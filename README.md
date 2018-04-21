@@ -10,7 +10,7 @@ const Loot = require('./lootsafe/LootSafe.js')
 baseurl = 'http://localhost:1337/v1'
 apikey = 'pWpzWuxoKUKAmlHc0wPi7lFS38FTth'
 otpkey = 'otpkey'
-ethAcc = '0x91e7abb929ba280680318343aaaace7ad16623e1'
+account = '0x91e7abb929ba280680318343aaaace7ad16623e1'
 
 const lootsafe = Loot.init(baseurl, apikey, otpkey)
 
@@ -61,10 +61,10 @@ Running all tests
 | **Crafter**   |   |   |   |
 | getCraftables()  | **GET**  | OPEN   | Available |
 | getDeconstructables()  | **GET**  | OPEN   | Available |
-| getDeconstructionRecipe(item)  | **GET**  | OPEN   | Available |
-| getRecipe(item) | **GET**  | OPEN   | Available |
+| getDeconstructionRecipe(itemAddress)  | **GET**  | OPEN   | Available |
+| getRecipe(itemAddress) | **GET**  | OPEN   | Available |
 | newRecipe(apiKey, otp, result, materials, counts)  | **POST**  | AUTH   | Available |
-| removeRecipe(apiKey,otp, item)  | **POST**  | AUTH   | Available 
+| removeRecipe(apiKey,otp, itemAddress)  | **POST**  | AUTH   | Available 
 | **Events**  |   |   |   |
 | fetchEvents()  | **GET**  | OPEN   | Available |
 | **Globals**  |   |   |   |
@@ -76,13 +76,13 @@ Running all tests
 | getItemAddresses()  | **GET**  | OPEN   | Available |
 | ledger()  | **GET**  | OPEN   | Available |
 | getItem(item)  | **GET**  | OPEN   | Available |
-| getItemByAddress(item) | **GET**  | OPEN   | Available |
-| spawnItem(item, useraccount) | **POST**  | OPEN   | Available |
-| clearAvailability(item, useraccount) | **POST**  | OPEN   | Available |
+| getItemByAddress(itemAddress) | **GET**  | OPEN   | Available |
+| spawnItem(itemAddress, account) | **POST**  | OPEN   | Available |
+| clearAvailability(itemAddress, account) | **POST**  | OPEN   | Available |
 | **LootBox** |   |   |   |
 | getChances()  | **GET**  | OPEN   | Available |
 | getCost()  | **GET**  | OPEN   | Available |
 | getItems(rarity)  | **GET**  | OPEN   | Available |
-| addItem(apikey,opt,item,rarity)  | **POST**  | AUTH  | Available |
+| addItem(apikey,opt,itemAddress,rarity)  | **POST**  | AUTH  | Available |
 | updateChance(apikey, opt, epic, rare, uncommon) | **GET**  | AUTH  | Available |
 | updateLootBoxCost(apikey, opt, cost)  | **GET**  | AUTH  | Available |

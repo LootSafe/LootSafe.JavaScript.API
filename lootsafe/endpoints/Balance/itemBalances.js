@@ -6,7 +6,7 @@ const fetch = require('node-fetch')
  * @param {string} address - Address to get item balances of
  */
 module.exports = function (address) {
-  return fetch(`${this.apiUrl}/balance/items/${address}`)
+  return fetch(`${this.apiUrl}balance/items/${address}`)
     .then(res => res.json())
     .catch(function (err) {
       throw Error(err)

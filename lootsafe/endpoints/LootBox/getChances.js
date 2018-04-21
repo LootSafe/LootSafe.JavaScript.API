@@ -4,7 +4,7 @@ const fetch = require('node-fetch')
  * @description Get the chances of each rarity group
  * @name lootboxChances */
 module.exports = function () {
-  return fetch(`${this.apiUrl}/lootbox/chances`)
+  return fetch(`${this.apiUrl}lootbox/chances`)
     .then(res => res.json())
     .catch(function (err) {
       throw Error(err)

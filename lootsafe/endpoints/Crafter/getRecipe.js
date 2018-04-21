@@ -5,8 +5,8 @@ const fetch = require('node-fetch')
  * @name recipe
  * @param {string} item - address of the item
  */
-module.exports = function (item) {
-  return fetch(`${this.apiUrl}/recipe/get/${item}`)
+module.exports = function (itemAddress) {
+  return fetch(`${this.apiUrl}recipe/get/${itemAddress}`)
     .then(res => res.json())
     .catch(function (err) {
       throw Error(err)
