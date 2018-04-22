@@ -10,7 +10,7 @@ const Loot = require('./lootsafe/LootSafe.js')
 baseurl = 'http://localhost:1337/v1'
 apikey = 'pWpzWuxoKUKAmlHc0wPi7lFS38FTth'
 otpkey = 'otpkey'
-account = '0x91e7abb929ba280680318343aaaace7ad16623e1'
+account = '0x46fa32eae27f431f386446330c153ce432474fff'
 
 const lootsafe = Loot.init(baseurl, apikey, otpkey)
 

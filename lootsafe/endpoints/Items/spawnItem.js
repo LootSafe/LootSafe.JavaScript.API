@@ -3,10 +3,10 @@ const fetch = require('node-fetch')
 /** @function
  * @description Spawn item and give to
  * @name newItem
- * @param {string} itemaddress
- * @param {string} user
+ * @param {string} itemAddress
+ * @param {string} to
  */
-module.exports = function (itemaddress, account) {
+module.exports = function (itemAddress, to) {
   return fetch(`${this.apiUrl}item/spawn`, {
     method: 'POST',
     headers: {
@@ -16,8 +16,8 @@ module.exports = function (itemaddress, account) {
       'otp': this.otpKey
     },
     body: JSON.stringify({
-      itemAddress: itemaddress,
-      to: account
+      itemAddress,
+      to
     })
   })
     .then(res => res.json())

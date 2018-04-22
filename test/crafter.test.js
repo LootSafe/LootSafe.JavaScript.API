@@ -94,7 +94,7 @@ describe('Crafter', () => {
       var materials = ['1212', '3434']
       var counts = ['1', '2']
 
-      lootsafe.newRecipe('123', materials, counts)
+      lootsafe.newRecipe('123456', materials, counts)
         .then(res => {
           if (res.status === 200 && res.data) {
             done()
@@ -129,7 +129,7 @@ describe('Crafter', () => {
       var materials = ['1212', '3434']
       var counts = ['1', '2']
 
-      lootsafe.newDestructionRecipe('123', materials, counts)
+      lootsafe.newDestructionRecipe('7890123', materials, counts)
         .then(res => {
           if (res.status === 200 && res.data) {
             done()

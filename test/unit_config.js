@@ -4,8 +4,8 @@ module.exports = {
     return new LootSafeUnit('http://localhost:1337/v1/',
       'pWpzWuxoKUKAmlHc0wPi7lFS38FTth',
       'otpKey',
-      '0xf659c7cef127b75ac85044c4297c21a230f352e9',
-      '0x67a8baa3da64b40d359253dd08398d02bec939ef',
+      '0x25ccc86f44133480a33b10af194d92c9f51454e4',
+      '0x74bac1b9304d5bcf882e73e204e1adc09da72ce5',
       'rare'
     )
   }

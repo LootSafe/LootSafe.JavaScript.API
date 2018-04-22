@@ -85,7 +85,7 @@ describe('LootSafe', () => {
 
   describe('Spawn Item', () => {
     it(`Should spawn a new item into an account`, done => {
-      lootsafe.spawnItem(lootsafe.itemAddress, lootsafe.account)
+      lootsafe.spawnItem(lootsafe.itemAddress, '0x8709f05d96b01f708e19862f1dc5b70a10b43494')
         .then(res => {
           if (res.status === 200 && res.data) {
             done()

@@ -14,9 +14,9 @@ module.exports = function (result, materials, counts) {
       key: 'pWpzWuxoKUKAmlHc0wPi7lFS38FTth'
     },
     body: JSON.stringify({
-      result: this.result,
-      materials: this.materials,
-      counts: this.counts
+      result,
+      materials,
+      counts
     })
   })
     .then(res => res.json())
