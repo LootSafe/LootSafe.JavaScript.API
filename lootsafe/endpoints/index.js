@@ -22,10 +22,10 @@ module.exports = {
   newDestructionRecipe: require('./Crafter/newDeconstructionRecipe'),
   // Events
   fetchEvents: require('./Event/fetchEvents'),
-  // Globes
-  getMeta: require('./Globes/getMeta'),
-  getTokenAddress: require('./Globes/getTokenAddress'),
-  newItem: require('./Globes/newItem'),
+  // General
+  getMeta: require('./General/getMeta'),
+  getTokenAddress: require('./General/getTokenAddress'),
+  newItem: require('./General/newItem'),
   // Lootbox
   lootboxChances: require('./LootBox/getChances'),
   lootboxCost: require('./LootBox/getCost'),

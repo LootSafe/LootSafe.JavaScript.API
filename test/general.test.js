@@ -2,7 +2,7 @@ const loot = require('./unit_config.js')
 const lootsafe = loot.initUnit()
 
 /* global describe it */
-describe('Globes', () => {
+describe('General', () => {
   describe('Meta Data', () => {
     it(`Should return meta data from the root url`, done => {
       lootsafe.getMeta()

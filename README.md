@@ -67,7 +67,7 @@ Running all tests
 | removeRecipe(apiKey,otp, itemAddress)  | **POST**  | AUTH   | Available 
 | **Events**  |   |   |   |
 | fetchEvents()  | **GET**  | OPEN   | Available |
-| **Globals**  |   |   |   |
+| **General**  |   |   |   |
 | getMeta()  | **GET**  | OPEN   | Available |
 | getTokenAddress()  | **GET**  | OPEN   | Available |
 | newItem(apiKey, otp, name, id, totalSupply, metadata) | **POST**  | AUTH   | Available |
