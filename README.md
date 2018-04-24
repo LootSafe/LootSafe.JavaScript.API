@@ -7,7 +7,7 @@ LootSafe API abstraction written in JavaScript
 ```
 const Loot = require('./lootsafe/LootSafe.js')
 
-baseurl = 'http://localhost:1337/v1'
+baseurl = 'http://localhost:1337/v1/'
 apikey = 'pWpzWuxoKUKAmlHc0wPi7lFS38FTth'
 otpkey = 'otpkey'
 account = '0x46fa32eae27f431f386446330c153ce432474fff'
@@ -33,9 +33,9 @@ Available Unit Tests
 test/balances.test.js
 test/crafter.test.js
 test/events.test.js
-test/globes.test.js
+test/general.test.js
+test/items.test.js
 test/lootbox.test.js
-test/lootsafe.test.js
 ```
 
 Running an individual test

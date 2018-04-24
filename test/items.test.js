@@ -2,7 +2,7 @@ const loot = require('./unit_config.js')
 const lootsafe = loot.initUnit()
 
 /* global describe it */
-describe('LootSafe', () => {
+describe('Items', () => {
   describe('Get Items', () => {
     it(`Should get all items`, done => {
       lootsafe.getItems()
