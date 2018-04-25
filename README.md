@@ -8,7 +8,7 @@ Check out [our website](http://lootsafe.io/) for more information.
 
 * [Requirements and Installation](#requirements-and-installation)
 * [Running the example](#running-the-example)
-* [Unit Tests](#unit-Tests)
+* [Unit Tests](#unit-tests)
 * [Endpoints](#endpoints)
 
 ## Requirements and Installation
