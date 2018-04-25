@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/LootSafe/LootSafe.JavaScript.API#readme",
   "dependencies": {
-    "eslint": "^4.19.1",
     "node-fetch": "^1.7.3"
   },
   "devDependencies": {

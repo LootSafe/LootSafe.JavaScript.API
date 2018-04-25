@@ -1,34 +1,78 @@
-# LootSafe.JavaScript.API
+#LootSafe.JavaScript.API
 
-LootSafe API abstraction written in JavaScript
+LootSafe API abstraction written in JavaScript to aid developers with integrating LootSafe's services with their games.
 
-### Usage
+Check out [our website](http://lootsafe.io/) for more information.
 
-```
-const Loot = require('./lootsafe/LootSafe.js')
+##Index
 
-baseurl = 'http://localhost:1337/v1/'
-apikey = 'pWpzWuxoKUKAmlHc0wPi7lFS38FTth'
-otpkey = 'otpkey'
-account = '0x46fa32eae27f431f386446330c153ce432474fff'
+* [Requirements and Installation](#requirements-and-installation)
+* [Running the example](#running-the-example)
+* [Unit Tests](#unit-Tests)
+* [Endpoints](#endpoints)
 
-const lootsafe = Loot.init(baseurl, apikey, otpkey)
+##Requirements and Installation
 
-lootsafe.itemBalances(ethAcc).then(res => {
-    console.log(res)
-})      
+This API wrapper works on a Node.js server and currently requires the usage of the following required libaries
 
-```
+* [node-fetch](https://www.npmjs.com/package/node-fetch)
+* [Mocha](https://github.com/mochajs/mocha) (for Unit Tests)
 
-### Example
+**Step 1** 
+
+Clone/Download this repository
+
+**Step 2** 
+
+Install dependencies using the [node package manager](https://www.npmjs.com/get-npm)
+
+  ```npm install``` 
+
+##Running the example
+
+Everything is installed, you're ready to see our example in action!
+
+**Run the following command**
 
 ```
 node index.js
 ```
 
-### Unit Tests
+**Contents of index.js**
 
-Available Unit Tests
+```
+const Loot = require('./lootsafe/LootSafe.js')
+
+const baseurl = 'http://localhost:1337/v1/'
+const apikey = 'pWpzWuxoKUKAmlHc0wPi7lFS38FTth'
+const otpkey = 'otpkey'
+const account = '0xb68066af702fe39ad76f486a9a1f971bccc10b1e'
+
+const lootsafe = Loot.init(baseurl, apikey, otpkey)
+
+lootsafe.itemBalances(account).then(res => {
+  console.log(res)
+})    
+```
+
+##Unit Tests
+
+Keep in mind that some of the unit tests that clear availability 
+
+**Running an individual test**
+
+```
+./node_modules/mocha/bin/mocha test/balances.test.js
+```
+
+**Running all tests**
+
+```
+./node_modules/mocha/bin/mocha test/*
+```
+
+**Available Unit Tests**
+
 ```
 test/balances.test.js
 test/crafter.test.js
@@ -38,20 +82,7 @@ test/items.test.js
 test/lootbox.test.js
 ```
 
-Running an individual test
-
-```
-./node_modules/mocha/bin/mocha test/balances.test.js
-```
-
-Running all tests
-
-```
-./node_modules/mocha/bin/mocha test/*
-```
-
-### Endpoints
-
+##Endpoints
  Endpoint  | Type | Auth | Status |
 |---|---|---|---|
 | **Balance**   |   |   |   |
