@@ -1,17 +1,17 @@
-#LootSafe.JavaScript.API
+# LootSafe.JavaScript.API
 
 LootSafe API abstraction written in JavaScript to aid developers with integrating LootSafe's services with their games.
 
 Check out [our website](http://lootsafe.io/) for more information.
 
-##Index
+## Index
 
 * [Requirements and Installation](#requirements-and-installation)
 * [Running the example](#running-the-example)
 * [Unit Tests](#unit-Tests)
 * [Endpoints](#endpoints)
 
-##Requirements and Installation
+## Requirements and Installation
 
 This API wrapper works on a Node.js server and currently requires the usage of the following required libaries
 
@@ -28,7 +28,7 @@ Install dependencies using the [node package manager](https://www.npmjs.com/get-
 
   ```npm install``` 
 
-##Running the example
+## Running the example
 
 Everything is installed, you're ready to see our example in action!
 
@@ -55,7 +55,7 @@ lootsafe.itemBalances(account).then(res => {
 })    
 ```
 
-##Unit Tests
+## Unit Tests
 
 Keep in mind that some of the unit tests that clear availability 
 
@@ -82,7 +82,7 @@ test/items.test.js
 test/lootbox.test.js
 ```
 
-##Endpoints
+## Endpoints
  Endpoint  | Type | Auth | Status |
 |---|---|---|---|
 | **Balance**   |   |   |   |
