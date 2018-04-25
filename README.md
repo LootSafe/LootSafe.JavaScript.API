@@ -57,7 +57,7 @@ lootsafe.itemBalances(account).then(res => {
 
 ## Unit Tests
 
-Keep in mind that some of the unit tests that clear availability 
+Keep in mind that some of the unit tests can clear availability 
 
 **Running an individual test**
 
