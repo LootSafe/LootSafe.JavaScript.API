@@ -10,6 +10,7 @@ Check out [our website](http://lootsafe.io/) for more information.
 * [Running the example](#running-the-example)
 * [Unit Tests](#unit-tests)
 * [Endpoints](#endpoints)
+* [Future Development](#future-development)
 
 ## Requirements and Installation
 
@@ -117,3 +118,8 @@ test/lootbox.test.js
 | addItem(apikey,opt,itemAddress,rarity)  | **POST**  | AUTH  | Available |
 | updateChance(apikey, opt, epic, rare, uncommon) | **GET**  | AUTH  | Available |
 | updateLootBoxCost(apikey, opt, cost)  | **GET**  | AUTH  | Available |
+
+### Future Development
+* Authentication on some routes
+* API key setup better documented
+* Less hardcoding
